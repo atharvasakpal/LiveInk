@@ -11,6 +11,7 @@ const Document = ({id} : {id:string}) => {
 
     const [input, setInput] = useState("");
     const [isUpdating, startTransition] = useTransition();
+    // const isOnwer = useOnwer(); // custom hook to check if the user is the owner of the document
 
     useEffect(() => {
         if (data?.title !== undefined) {

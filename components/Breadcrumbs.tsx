@@ -9,7 +9,7 @@ const Breadcrumbs = () => {
   const segments = path.split('/').filter(Boolean) // Remove empty strings
 
   return (
-    <div className="breadcrumbs text-sm">
+    <div className="breadcrumbs text-sm hidden md:inline">
       <ul>
         <li>
           <Link href="/">
